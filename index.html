@@ -1,24 +1,63 @@
-<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-<df-messenger
-  project-id="aihumanity-470515"
-  agent-id="d4189681-dadb-4d8a-975a-4da9cb5b6467"
-  language-code="en"
-  max-query-length="-1">
-  <df-messenger-chat-bubble
-    chat-title="Elderly Companion Bot">
-  </df-messenger-chat-bubble>
-</df-messenger>
-<style>
-  df-messenger {
-    z-index: 999;
-    position: fixed;
-    --df-messenger-font-color: #000;
-    --df-messenger-font-family: Google Sans;
-    --df-messenger-chat-background: #f3f6fc;
-    --df-messenger-message-user-background: #d3e3fd;
-    --df-messenger-message-bot-background: #fff;
-    bottom: 16px;
-    right: 16px;
+<div class="chatbot-info">
+    <h2>Elderly Companion Bot 👵💬</h2>
+    <p>
+      Welcome! Our AI companion is here to assist elderly users with
+      health tips, reminders, and friendly conversation.
+      Click the chat icon at the bottom right to start chatting.
+    </p>
+  </div>
+  
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+  
+  <df-messenger
+    project-id="aihumanity-470515"
+    agent-id="d4189681-dadb-4d8a-975a-4da9cb5b6467"
+    language-code="en"
+    max-query-length="-1">
+  
+    <df-messenger-chat-bubble
+      chat-title="Elderly Companion Bot">
+    </df-messenger-chat-bubble>
+  
+  </df-messenger>
+  
+  <style>
+  .chatbot-info{
+    max-width:600px;
+    margin:80px auto;
+    text-align:center;
+    font-family:Arial, sans-serif;
   }
-</style>
+  
+  .chatbot-info h2{
+    font-size:32px;
+    margin-bottom:10px;
+  }
+  
+  .chatbot-info p{
+    font-size:18px;
+    color:#555;
+  }
+  
+  df-messenger {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+  
+    --df-messenger-font-family: Arial;
+    --df-messenger-font-size: 16px;
+  
+    --df-messenger-chat-background: #f9fafc;
+  
+    --df-messenger-message-user-background: #4f7cff;
+    --df-messenger-message-user-font-color: white;
+  
+    --df-messenger-message-bot-background: white;
+  
+    --df-messenger-chat-bubble-background: linear-gradient(135deg,#4f7cff,#6fa8ff);
+  
+    transform: scale(1.2);
+  }
+  </style>
